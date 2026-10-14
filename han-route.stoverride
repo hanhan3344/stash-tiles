@@ -56,22 +56,22 @@ tiles:
 
 script-providers:
   ChatGPT-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@33e6b6f92768c74d23829e518c88d1238c411a4b/script/chatgpt.js
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/chatgpt.js
   Codex-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@33e6b6f92768c74d23829e518c88d1238c411a4b/script/codex.js
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/codex.js
   Claude-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@33e6b6f92768c74d23829e518c88d1238c411a4b/script/claude.js
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/claude.js
   Grok-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@33e6b6f92768c74d23829e518c88d1238c411a4b/script/grok.js
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/grok.js
   Gemini-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@33e6b6f92768c74d23829e518c88d1238c411a4b/script/gemini.js
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/gemini.js
   Copilot-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@33e6b6f92768c74d23829e518c88d1238c411a4b/script/copilot.js
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/copilot.js
   YouTube-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@33e6b6f92768c74d23829e518c88d1238c411a4b/script/youtube.js
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/youtube.js
   Netflix-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@33e6b6f92768c74d23829e518c88d1238c411a4b/script/netflix.js
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/netflix.js
   Disney-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@33e6b6f92768c74d23829e518c88d1238c411a4b/script/disney.js
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/disney.js
   Spotify-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@33e6b6f92768c74d23829e518c88d1238c411a4b/script/spotify.js
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/spotify.js

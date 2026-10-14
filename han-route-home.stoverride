@@ -1,0 +1,25 @@
+name: Han Route Home Test
+desc: >
+  Homepage (non-collapsed) tiles to test X-Stash-Selected-Proxy routing.
+
+tiles:
+  - name: Codex-Han
+    title: Codex
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/codex.png
+    url: https://chatgpt.com/codex
+  - name: Claude-Han
+    title: Claude
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/claude.png
+    url: https://claude.ai
+  - name: Gemini-Han
+    title: Gemini
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/gemini.png
+    url: https://gemini.google.com
+
+script-providers:
+  Codex-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/codex.js
+  Claude-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/claude.js
+  Gemini-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/gemini.js
