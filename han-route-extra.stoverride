@@ -1,0 +1,49 @@
+name: Han Route Tiles Extra
+desc: >
+  Optional extras: Cursor, Telegram, linux.do, Instagram, Steam, PayPal.
+
+tiles:
+  - name: Cursor-Han
+    title: Cursor
+    icon: https://cursor.com/apple-touch-icon.png
+    collapsed: true
+    url: https://cursor.com
+  - name: Telegram-Han
+    title: Telegram
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+    collapsed: true
+    url: https://web.telegram.org
+  - name: linuxdo-Han
+    title: linux.do
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
+    collapsed: true
+    url: https://linux.do
+  - name: Instagram-Han
+    title: Instagram
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Instagram.png
+    collapsed: true
+    url: https://www.instagram.com
+  - name: Steam-Han
+    title: Steam
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Steam.png
+    collapsed: true
+    url: https://store.steampowered.com
+  - name: PayPal-Han
+    title: PayPal
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/PayPal.png
+    collapsed: true
+    url: https://www.paypal.com
+
+script-providers:
+  Cursor-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/cursor.js
+  Telegram-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/telegram.js
+  linuxdo-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/linuxdo.js
+  Instagram-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/instagram.js
+  Steam-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/steam.js
+  PayPal-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/paypal.js

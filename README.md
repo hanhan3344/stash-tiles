@@ -1,13 +1,18 @@
 # stash-tiles
 
-Stash（iOS）折叠面板，放在「第三方服务」里。每个服务显示两项：
-- 能不能用：✅ 可用 / ❌ 不可用(状态码) / ⚠️ 连接失败
-- 走哪个策略组，以及出口在哪：例如 `AI-专线 → 🇺🇸 US Los Angeles · 运营商`
+Stash collapsed tiles (third-party services). Each tile shows:
+- Availability: Available / Not available / Network error
+- Policy group + exit region (country/city/ISP)
 
-安装：Stash → 覆写 → 从 URL 安装
-https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/han-route.stoverride
+Install (use a commit-pinned URL from the latest release notes / agent message; `@main` may lag on jsDelivr):
 
-## 限制
-- Stash 脚本接口读不到策略组当前选中的是哪个节点，所以面板显示的是策略组名加出口的国家、城市和运营商，不是节点名。
-- 服务和策略组的对应关系写在 `script/<服务>.js` 第一行，改了规则要同步改。
-- 请求通过 `X-Stash-Selected-Proxy` 指定走哪个策略组；出口信息由 ip-api.com 查询。
+```
+https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@<sha>/han-route.stoverride
+```
+
+## Limits
+- Stash scripts cannot read which proxy a policy group currently selects; tiles show group name plus egress geo via ip-api.com.
+- Service → group mapping is hardcoded in `script/<service>.js` (first line).
+- Requests use `X-Stash-Selected-Proxy` set to the policy group name.
+
+`clone-test.stoverride` is an English clone of pengyanai's pack (scripts still from pengyanai) for hosting diagnostics.

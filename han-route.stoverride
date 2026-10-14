@@ -1,119 +1,77 @@
 name: Han Route Tiles
 desc: >
-  各服务可用性 + 按 Han 订阅规则走的策略组与出口地区。
+  Availability and egress for AI/streaming. Shows policy group + exit region (node name unavailable via Stash API).
 
 tiles:
-  - name: Han-chatgpt
+  - name: ChatGPT-Han
     title: ChatGPT
     icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/chatgpt.png
     collapsed: true
     url: https://chatgpt.com
-  - name: Han-codex
+  - name: Codex-Han
     title: Codex
     icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/codex.png
     collapsed: true
     url: https://chatgpt.com/codex
-  - name: Han-claude
+  - name: Claude-Han
     title: Claude
     icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/claude.png
     collapsed: true
     url: https://claude.ai
-  - name: Han-grok
+  - name: Grok-Han
     title: Grok
     icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/grok.png
     collapsed: true
     url: https://grok.com
-  - name: Han-gemini
+  - name: Gemini-Han
     title: Gemini
     icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/gemini.png
     collapsed: true
     url: https://gemini.google.com
-  - name: Han-cursor
-    title: Cursor
-    icon: https://cursor.com/apple-touch-icon.png
-    collapsed: true
-    url: https://cursor.com
-  - name: Han-copilot
+  - name: Copilot-Han
     title: Copilot
     icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/copilot.png
     collapsed: true
     url: https://copilot.microsoft.com
-  - name: Han-youtube
+  - name: YouTube-Han
     title: YouTube
     icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/youtube.png
     collapsed: true
     url: https://www.youtube.com
-  - name: Han-netflix
+  - name: Netflix-Han
     title: Netflix
     icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/netflix.png
     collapsed: true
     url: https://www.netflix.com
-  - name: Han-disney
+  - name: Disney-Han
     title: Disney+
     icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/disney.png
     collapsed: true
     url: https://www.disneyplus.com
-  - name: Han-spotify
+  - name: Spotify-Han
     title: Spotify
     icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/spotify.png
     collapsed: true
     url: https://www.spotify.com
-  - name: Han-telegram
-    title: Telegram
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
-    collapsed: true
-    url: https://web.telegram.org
-  - name: Han-linuxdo
-    title: linux.do
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
-    collapsed: true
-    url: https://linux.do
-  - name: Han-instagram
-    title: Instagram
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Instagram.png
-    collapsed: true
-    url: https://www.instagram.com
-  - name: Han-steam
-    title: Steam
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Steam.png
-    collapsed: true
-    url: https://store.steampowered.com
-  - name: Han-paypal
-    title: PayPal
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/PayPal.png
-    collapsed: true
-    url: https://www.paypal.com
 
 script-providers:
-  Han-chatgpt:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/chatgpt.js
-  Han-codex:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/codex.js
-  Han-claude:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/claude.js
-  Han-grok:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/grok.js
-  Han-gemini:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/gemini.js
-  Han-cursor:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/cursor.js
-  Han-copilot:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/copilot.js
-  Han-youtube:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/youtube.js
-  Han-netflix:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/netflix.js
-  Han-disney:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/disney.js
-  Han-spotify:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/spotify.js
-  Han-telegram:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/telegram.js
-  Han-linuxdo:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/linuxdo.js
-  Han-instagram:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/instagram.js
-  Han-steam:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/steam.js
-  Han-paypal:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/paypal.js
+  ChatGPT-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/chatgpt.js
+  Codex-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/codex.js
+  Claude-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/claude.js
+  Grok-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/grok.js
+  Gemini-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/gemini.js
+  Copilot-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/copilot.js
+  YouTube-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/youtube.js
+  Netflix-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/netflix.js
+  Disney-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/disney.js
+  Spotify-Han:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@__PIN__/script/spotify.js

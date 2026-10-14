@@ -1,6 +1,11 @@
 const KEY = "paypal", GROUP = "Paypal";
-// Han's Stash route tiles. argument: "<service-key>|<policy-group>"
-
+async function request(params) {
+  return new Promise((resolve) => {
+    $httpClient.get(params, (error, response, data) => {
+      resolve({ error, response, data });
+    });
+  });
+}
 const S = {
   chatgpt: { url: "https://chatgpt.com/cdn-cgi/trace", ok: (s, b) => !/loc=(CN|HK|RU|IR|KP|MO)\b/.test(b) && s === 200 },
   codex:   { url: "https://chatgpt.com/codex", ok: (s, b) => s < 400 && !/unsupported_country/i.test(b) },
@@ -20,21 +25,25 @@ const S = {
   linuxdo: { url: "https://linux.do", ok: (s) => s < 500 },
 };
 const hdr = GROUP ? { "X-Stash-Selected-Proxy": encodeURIComponent(GROUP) } : {};
-const get = (url, t) => new Promise((r) =>
-  $httpClient.get({ url, headers: Object.assign({ "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Safari/604.1" }, hdr), timeout: t || 8 },
-    (e, res, d) => r({ e, s: res ? res.status || res.statusCode : 0, d: d || "" })));
-const flag = (cc) => cc && cc.length === 2 ? String.fromCodePoint(...[...cc.toUpperCase()].map((c) => 127397 + c.charCodeAt(0))) : "🌐";
+const UA = { "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Safari/604.1" };
+const get = (url, t) => request({ url, headers: Object.assign({}, UA, hdr), timeout: t || 8 });
+const flag = (cc) => cc && cc.length === 2 ? String.fromCodePoint(...[...cc.toUpperCase()].map((c) => 127397 + c.charCodeAt(0))) : "";
 
 (async () => {
   const svc = S[KEY];
-  if (!svc) return $done({ content: "未知服务: " + KEY });
+  if (!svc) return $done({ content: "Unknown service: " + KEY });
   const [r, g] = await Promise.all([get(svc.url), get("http://ip-api.com/json/?fields=status,countryCode,city,isp&lang=zh-CN", 6)]);
-  let exit = "出口未知";
-  try { const j = JSON.parse(g.d); if (j.status === "success") exit = `${flag(j.countryCode)} ${j.countryCode} ${j.city || ""} · ${(j.isp || "").slice(0, 18)}`.trim(); } catch (_) {}
-  const route = GROUP || "当前节点";
+  let exit = "exit unknown";
+  try {
+    const j = JSON.parse(g.data || "");
+    if (j.status === "success") exit = `${flag(j.countryCode)} ${j.countryCode} ${j.city || ""} · ${(j.isp || "").slice(0, 18)}`.trim();
+  } catch (_) {}
+  const route = GROUP || "current";
+  const s = r.response ? r.response.status || r.response.statusCode : 0;
+  const body = r.data || "";
   let state, color;
-  if (r.e || !r.s) { state = "⚠️ 连接失败"; color = "#8E8E93"; }
-  else if (svc.ok(r.s, r.d)) { state = "✅ 可用"; color = "#34C759"; }
-  else { state = `❌ 不可用(${r.s})`; color = "#FF3B30"; }
-  $done({ content: `${state}\n${route} → ${exit}`, backgroundColor: color });
-})().catch((e) => $done({ content: "脚本异常: " + e }));
+  if (r.error || !s) { state = "Network Error"; color = "#8E8E93"; }
+  else if (svc.ok(s, body)) { state = "Available"; color = "#34C759"; }
+  else { state = "Not Available (" + s + ")"; color = "#FF3B30"; }
+  $done({ content: state + "\n" + route + " → " + exit, backgroundColor: color });
+})().catch((e) => $done({ content: "Script error: " + e }));
