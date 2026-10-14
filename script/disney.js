@@ -1,5 +1,6 @@
+const KEY = "disney", GROUP = "Available";
 // Han's Stash route tiles. argument: "<service-key>|<policy-group>"
-const [KEY, GROUP] = ($argument || "").split("|");
+
 const S = {
   chatgpt: { url: "https://chatgpt.com/cdn-cgi/trace", ok: (s, b) => !/loc=(CN|HK|RU|IR|KP|MO)\b/.test(b) && s === 200 },
   codex:   { url: "https://chatgpt.com/codex", ok: (s, b) => s < 400 && !/unsupported_country/i.test(b) },
@@ -26,7 +27,7 @@ const flag = (cc) => cc && cc.length === 2 ? String.fromCodePoint(...[...cc.toUp
 
 (async () => {
   const svc = S[KEY];
-  if (!svc) return $done({ content: "参数错误: " + $argument });
+  if (!svc) return $done({ content: "未知服务: " + KEY });
   const [r, g] = await Promise.all([get(svc.url), get("http://ip-api.com/json/?fields=status,countryCode,city,isp&lang=zh-CN", 6)]);
   let exit = "出口未知";
   try { const j = JSON.parse(g.d); if (j.status === "success") exit = `${flag(j.countryCode)} ${j.countryCode} ${j.city || ""} · ${(j.isp || "").slice(0, 18)}`.trim(); } catch (_) {}

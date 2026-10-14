@@ -1,166 +1,119 @@
 name: Han Route Tiles
-desc: 各服务可用性 + 按 Han 订阅规则走的策略组与出口地区。组名映射来自 MBA 发布的 published.yaml。
+desc: >
+  各服务可用性 + 按 Han 订阅规则走的策略组与出口地区。
 
 tiles:
-  - name: han-chatgpt
+  - name: Han-chatgpt
     title: ChatGPT
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/chatgpt.png
     collapsed: true
-    interval: 900
-    argument: "chatgpt|AI-专线"
     url: https://chatgpt.com
-  - name: han-codex
+  - name: Han-codex
     title: Codex
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/codex.png
     collapsed: true
-    interval: 900
-    argument: "codex|AI-专线"
     url: https://chatgpt.com/codex
-  - name: han-claude
+  - name: Han-claude
     title: Claude
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/claude.png
     collapsed: true
-    interval: 900
-    argument: "claude|AI-专线"
     url: https://claude.ai
-  - name: han-grok
+  - name: Han-grok
     title: Grok
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/grok.png
     collapsed: true
-    interval: 900
-    argument: "grok|AI-专线"
     url: https://grok.com
-  - name: han-gemini
+  - name: Han-gemini
     title: Gemini
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/gemini.png
     collapsed: true
-    interval: 900
-    argument: "gemini|AI-专线"
     url: https://gemini.google.com
-  - name: han-cursor
+  - name: Han-cursor
     title: Cursor
-    icon: network
+    icon: https://cursor.com/apple-touch-icon.png
     collapsed: true
-    interval: 900
-    argument: "cursor|AI-专线"
     url: https://cursor.com
-  - name: han-copilot
+  - name: Han-copilot
     title: Copilot
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/copilot.png
     collapsed: true
-    interval: 900
-    argument: "copilot|Available"
     url: https://copilot.microsoft.com
-  - name: han-youtube
+  - name: Han-youtube
     title: YouTube
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/youtube.png
     collapsed: true
-    interval: 900
-    argument: "youtube|Available"
     url: https://www.youtube.com
-  - name: han-netflix
+  - name: Han-netflix
     title: Netflix
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/StashNetworks/misc@main/collapsed-tiles/img/netflix.png
     collapsed: true
-    interval: 900
-    argument: "netflix|Available"
     url: https://www.netflix.com
-  - name: han-disney
+  - name: Han-disney
     title: Disney+
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/disney.png
     collapsed: true
-    interval: 900
-    argument: "disney|Available"
     url: https://www.disneyplus.com
-  - name: han-spotify
+  - name: Han-spotify
     title: Spotify
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/pengyanai/misc@main/collapsed-tiles/img/spotify.png
     collapsed: true
-    interval: 900
-    argument: "spotify|Available"
     url: https://www.spotify.com
-  - name: han-telegram
+  - name: Han-telegram
     title: Telegram
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
     collapsed: true
-    interval: 900
-    argument: "telegram|Available"
     url: https://web.telegram.org
-  - name: han-linuxdo
+  - name: Han-linuxdo
     title: linux.do
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
     collapsed: true
-    interval: 900
-    argument: "linuxdo|Available"
     url: https://linux.do
-  - name: han-instagram
+  - name: Han-instagram
     title: Instagram
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Instagram.png
     collapsed: true
-    interval: 900
-    argument: "instagram|Instagram"
     url: https://www.instagram.com
-  - name: han-steam
+  - name: Han-steam
     title: Steam
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Steam.png
     collapsed: true
-    interval: 900
-    argument: "steam|Steam"
     url: https://store.steampowered.com
-  - name: han-paypal
+  - name: Han-paypal
     title: PayPal
-    icon: network
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/PayPal.png
     collapsed: true
-    interval: 900
-    argument: "paypal|Paypal"
     url: https://www.paypal.com
 
 script-providers:
-  han-chatgpt:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-codex:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-claude:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-grok:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-gemini:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-cursor:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-copilot:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-youtube:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-netflix:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-disney:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-spotify:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-telegram:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-linuxdo:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-instagram:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-steam:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
-  han-paypal:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/check.js
-    interval: 86400
+  Han-chatgpt:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/chatgpt.js
+  Han-codex:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/codex.js
+  Han-claude:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/claude.js
+  Han-grok:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/grok.js
+  Han-gemini:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/gemini.js
+  Han-cursor:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/cursor.js
+  Han-copilot:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/copilot.js
+  Han-youtube:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/youtube.js
+  Han-netflix:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/netflix.js
+  Han-disney:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/disney.js
+  Han-spotify:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/spotify.js
+  Han-telegram:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/telegram.js
+  Han-linuxdo:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/linuxdo.js
+  Han-instagram:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/instagram.js
+  Han-steam:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/steam.js
+  Han-paypal:
+    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/script/paypal.js

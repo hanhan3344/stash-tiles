@@ -9,5 +9,5 @@ https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@main/han-route.stoverride
 
 ## 限制
 - Stash 脚本接口读不到策略组当前选中的是哪个节点，所以面板显示的是策略组名加出口的国家、城市和运营商，不是节点名。
-- 服务和策略组的对应关系是按我自己的订阅规则写死在 `argument` 里的，改了规则要同步改这里。
+- 服务和策略组的对应关系写在 `script/<服务>.js` 第一行，改了规则要同步改。
 - 请求通过 `X-Stash-Selected-Proxy` 指定走哪个策略组；出口信息由 ip-api.com 查询。
