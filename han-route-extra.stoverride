@@ -36,14 +36,14 @@ tiles:
 
 script-providers:
   Cursor-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/cursor.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/cursor.js
   Telegram-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/telegram.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/telegram.js
   linuxdo-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/linuxdo.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/linuxdo.js
   Instagram-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/instagram.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/instagram.js
   Steam-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/steam.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/steam.js
   PayPal-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/paypal.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/paypal.js

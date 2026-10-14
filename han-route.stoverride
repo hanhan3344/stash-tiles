@@ -56,22 +56,22 @@ tiles:
 
 script-providers:
   ChatGPT-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/chatgpt.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/chatgpt.js
   Codex-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/codex.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/codex.js
   Claude-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/claude.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/claude.js
   Grok-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/grok.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/grok.js
   Gemini-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/gemini.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/gemini.js
   Copilot-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/copilot.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/copilot.js
   YouTube-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/youtube.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/youtube.js
   Netflix-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/netflix.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/netflix.js
   Disney-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/disney.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/disney.js
   Spotify-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/spotify.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/spotify.js

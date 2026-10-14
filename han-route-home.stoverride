@@ -18,8 +18,8 @@ tiles:
 
 script-providers:
   Codex-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/codex.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/codex.js
   Claude-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/claude.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/claude.js
   Gemini-Han:
-    url: https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@d9c41dd62e45833ac9fb0ee36a20fc261f5d0dd9/script/gemini.js
+    url: https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/script/gemini.js

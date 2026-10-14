@@ -4,10 +4,10 @@ Stash collapsed tiles (third-party services). Each tile shows:
 - Availability: Available / Not available / Network error
 - Policy group + exit region (country/city/ISP)
 
-Install (use a commit-pinned URL from the latest release notes / agent message; `@main` may lag on jsDelivr):
+Install (stable, GitHub raw, ~5 min cache):
 
 ```
-https://fastly.jsdelivr.net/gh/hanhan3344/stash-tiles@<sha>/han-route.stoverride
+https://raw.githubusercontent.com/hanhan3344/stash-tiles/main/han-route.stoverride
 ```
 
 ## Limits
